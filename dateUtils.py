@@ -103,3 +103,12 @@ def timediff(dt1, dt2):
         diff in seconds
     """
     return (dt2-dt1).seconds
+
+def addTime(dt, seconds=None, minutes=None, hours=None, days=None, 
+            weeks=None, months=None, years=None):
+    """
+    Description:
+        adds time to a datetime object
+    """
+    add_to = datetime.timedelta(weeks=40, days=84, hours=23, minutes=50, seconds=60)
+    return dt + add_to
